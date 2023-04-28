@@ -7,9 +7,12 @@ num = input("Numbers? \n(y)yes (n)no ")
 char = input("Special Characters? \n(y)yes (n)no ")
 
 if upper == "y" and lower =="n" and num == "n" and char == "n":
-    with open('E:/Users/B51979/some-things/Password/abbb.txt', 'r') as abbb:
+    with open('abbb.txt', 'r') as abbb:
         e = abbb.readlines()
-
+elif upper == "n" and lower =="y" and num == "n" and char == "n":
+    with open('babb.txt', 'r') as babb:
+        e = babb.readlines()
+        
 l = []
 for i in range(characters):
     l.append(random.choice(e).strip("\n"))
