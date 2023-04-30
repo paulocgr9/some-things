@@ -8,22 +8,22 @@ char = input("Special Characters? \n(y)yes (n)no ")
 
 p = []
 if upper != "n" and upper == "y":
-    with open('upper.txt', 'r') as u:
+    with open('Password/upper.txt', 'r') as u:
         up = u.readlines()
         for i in up:
             p.append(i)
 if lower != "n" and lower == "y":
-    with open('lower.txt', 'r') as l:
+    with open('Password/lower.txt', 'r') as l:
         lo = l.readlines()
         for i in lo:
             p.append(i)
 if num != "n" and num == "y":
-    with open('num.txt', 'r') as n:
+    with open('Password/num.txt', 'r') as n:
         nu = n.readlines()
         for i in nu:
             p.append(i)
 if char != "n" and char == "y":
-    with open('special.txt', 'r') as s:
+    with open('Password/special.txt', 'r') as s:
         sp = s.readlines()
         for i in sp:
             p.append(i)
